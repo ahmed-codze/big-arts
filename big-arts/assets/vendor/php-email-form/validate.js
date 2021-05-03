@@ -57,14 +57,17 @@
     })
     .then(response => {
       if( response.ok ) {
-        return response.text()
+        return response.text();
+
       } else {
         throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
       }
     })
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
-      if (data.trim() == 'OK') {
+      alert(data.trim())
+      if (data.trim() == 'done') {
+        
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset(); 
       } else {

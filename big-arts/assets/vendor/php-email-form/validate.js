@@ -65,7 +65,6 @@
     })
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
-      alert(data.trim())
       if (data.trim() == 'done') {
         
         thisForm.querySelector('.sent-message').classList.add('d-block');

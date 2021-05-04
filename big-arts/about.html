@@ -280,9 +280,12 @@
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Join Our Mail list</h4>
             <p>We will send you all updates</p>
-            <form action="https://vuinteriordesign.pythonanywhere.com/contact/551/" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+            <form action="https://vuinteriordesign.pythonanywhere.com/contact/551/" method="post"  id="mail_Form">
+              <input type="email" name="email" id="mail" ><input type="submit" value="Subscribe" >
             </form>
+            <div>
+                <h4 style="color: greenyellow;display:none" id="sub">Subscribed</h4>
+            </div>
 
           </div>
 
@@ -306,6 +309,7 @@
 
 
   <!-- Vendor JS Files -->
+  <script src="assets/js/jquery-3.2.1.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>

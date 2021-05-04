@@ -3,6 +3,18 @@
 * URL: https://bootstrapmade.com/php-email-form/
 * Author: BootstrapMade.com
 */
+
+$( "#mail_Form" ).submit(function( event ) {
+  $.post( "https://vuinteriordesign.pythonanywhere.com/contact/551/", {
+    email: $('#mail').val(),
+
+  });
+  $( "#mail" ).val(" ")
+  $( "#sub" ).show("slow")
+  event.preventDefault();
+
+});
+
 (function () {
   "use strict";
 
